@@ -15,7 +15,7 @@ client.db('sample_training').collection('trips').find({'birth year':1951}).toArr
   console.log(result);
 });             
 // perform actions on the collection object
-}
+
 });
 });
 

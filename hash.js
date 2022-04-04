@@ -5,7 +5,7 @@ const password = prompt('Password?');
 //const password = "mypass123"
 const saltRounds = 10
 
-const hashpass = bcrypt.genSalt(saltRounds, function (saltError, salt) {
+const hashpass = bcrypt.genSaltSync(saltRounds, function (saltError, salt) {
   if (saltError) {
     throw saltError
   } else {
